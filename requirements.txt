@@ -1,10 +1,44 @@
-opencv-python
-Pillow
-numpy
-requests
-beautifulsoup4
-wikipedia
+# =============================================================================
+# Portraits-AI - requirements.txt
+# =============================================================================
 
-# Dev dependencies
-pytest
-pytest-cov
+# Core
+torch>=2.0.0
+torchvision>=0.15.0
+pillow>=10.0.0
+numpy>=1.24.0
+
+# Image processing
+opencv-python>=4.8.0
+
+# HTTP & APIs
+requests>=2.31.0
+
+# Testing & QA
+pytest>=7.4.0
+ruff>=0.1.0
+
+# =============================================================================
+# OPTIONAL - Solo si vas a entrenar LoRA LOCALMENTE:
+# (Si usás Google Colab, no necesitás esto)
+# =============================================================================
+# kohya-ng>=0.8.0
+# accelerate>=0.25.0
+# bitsandbytes>=0.41.0  # optional, para 8-bit Adam
+
+# =============================================================================
+# NOTA IMPORTANTE:
+# Para 4060 8GB, ejecutá en CMD (NO Anaconda):
+# =============================================================================
+# 1. Creá entorno virtual:
+#    py -3.11 -m venv venv
+#    venv\Scripts\activate
+#
+# 2. Install PyTorch CUDA PRIMERO:
+#    pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+#
+# 3. Después install otros:
+#    pip install -r requirements.txt
+#
+# 4. Para LoRA local (opcional):
+#    pip install kohya-ng accelerate

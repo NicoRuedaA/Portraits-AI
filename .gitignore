@@ -13,6 +13,11 @@ Retratos/00_DESCARTADOS/
 Retratos/01_RECORTE_FINAL/
 01_RECORTE_FINAL/
 
+# LoRA Training Dataset
+datasets/
+lora_outputs/
+models/
+
 # Optional: If you want to track haarcascade XML (needed by code as fallback):
  Retratos/haarcascade_frontalface_default.xml
 
