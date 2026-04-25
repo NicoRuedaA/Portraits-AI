@@ -1,0 +1,37 @@
+{
+  "Francesa": {
+    "lang": "es",
+    "monarcas": [
+      ["Felipe VI de Francia", 1328, 1350, "Siglo XIV"],
+      ["Carlos V de Francia", 1364, 1380, "Siglo XIV"],
+      ["Carlos VII de Francia", 1422, 1461, "Siglo XV"],
+      ["Luis XII de Francia", 1498, 1515, "Siglo XV"],
+      ["Francisco I de Francia", 1515, 1547, "Siglo XVI"],
+      ["Enrique IV de Francia", 1589, 1610, "Siglo XVI"],
+      ["Luis XIV de Francia", 1643, 1715, "Siglo XVII"],
+      ["Luis XV de Francia", 1715, 1774, "Siglo XVIII"],
+      ["Luis XVIII de Francia", 1814, 1824, "Siglo XIX"]
+    ]
+  },
+  "Otomana": {
+    "lang": "es",
+    "monarcas": [
+      ["Osman I", 1299, 1324, "Siglo XIV"],
+      ["Orhan I", 1324, 1362, "Siglo XIV"],
+      ["Mehmed II", 1451, 1481, "Siglo XV"],
+      ["Solimán el Magnífico", 1520, 1566, "Siglo XVI"],
+      ["Ahmed I", 1603, 1617, "Siglo XVII"],
+      ["Mahmud II", 1808, 1839, "Siglo XIX"]
+    ]
+  },
+  "Rusa": {
+    "lang": "es",
+    "monarcas": [
+      ["Iván IV de Rusia", 1547, 1584, "Siglo XVI"],
+      ["Miguel I de Rusia", 1613, 1645, "Siglo XVII"],
+      ["Pedro I de Rusia", 1682, 1725, "Siglo XVII"],
+      ["Catalina II de Rusia", 1762, 1796, "Siglo XVIII"],
+      ["Alejandro I de Rusia", 1801, 1825, "Siglo XIX"]
+    ]
+  }
+}
