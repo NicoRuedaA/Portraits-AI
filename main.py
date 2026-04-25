@@ -67,7 +67,7 @@ def main():
 
     # === DESCARGA ===
     if args.all or args.download:
-        from scraper_core import load_config, process_dynasty, setup_logging, stats
+        from scraper_core import load_config, process_dynasty, setup_logging
 
         if not (BASE_PATH / "monarcas.json").exists():
             log.error("No se encontró monarcas.json")

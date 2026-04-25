@@ -31,9 +31,9 @@ import requests
 import wikipedia
 
 # --- CONFIGURACIÓN GLOBAL ---
-BASE_DIR = Path(os.path.abspath(__file__)).parent / "Retratos"
-CONFIG_FILE = Path(os.path.abspath(__file__)).parent / "monarcas.json"
-LOG_DIR = Path(os.path.abspath(__file__)).parent / "logs"
+BASE_DIR = Path(os.path.abspath(__file__)).parent.parent / "Retratos"
+CONFIG_FILE = Path(os.path.abspath(__file__)).parent.parent / "monarcas.json"
+LOG_DIR = Path(os.path.abspath(__file__)).parent.parent / "logs"
 
 HEADERS = {
     "User-Agent": "PortraitsAI/1.0 (https://github.com/NicoRuedaA/Portraits-AI; academic/educational use)"
