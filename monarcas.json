@@ -1,37 +1,221 @@
 {
   "Francesa": {
     "lang": "es",
+    "fallback_lang": "en",
+    "keywords": ["portrait", "painting", "king", "queen", "rey", "reina", "retrato", "roi", "monarque"],
+    "exclude_keywords": ["arms", "coa", "map", "flag", "svg", "castle", "mapa", "familia", "chateau"],
     "monarcas": [
       ["Felipe VI de Francia", 1328, 1350, "Siglo XIV"],
       ["Carlos V de Francia", 1364, 1380, "Siglo XIV"],
+      ["Carlos VI de Francia", 1380, 1422, "Siglo XV"],
       ["Carlos VII de Francia", 1422, 1461, "Siglo XV"],
+      ["Luis XI de Francia", 1461, 1483, "Siglo XV"],
+      ["Carlos VIII de Francia", 1483, 1498, "Siglo XV"],
       ["Luis XII de Francia", 1498, 1515, "Siglo XV"],
       ["Francisco I de Francia", 1515, 1547, "Siglo XVI"],
+      ["Enrique II de Francia", 1547, 1559, "Siglo XVI"],
       ["Enrique IV de Francia", 1589, 1610, "Siglo XVI"],
+      ["Luis XIII de Francia", 1610, 1643, "Siglo XVII"],
       ["Luis XIV de Francia", 1643, 1715, "Siglo XVII"],
       ["Luis XV de Francia", 1715, 1774, "Siglo XVIII"],
+      ["Luis XVI de Francia", 1774, 1792, "Siglo XVIII"],
       ["Luis XVIII de Francia", 1814, 1824, "Siglo XIX"]
     ]
   },
   "Otomana": {
     "lang": "es",
+    "fallback_lang": "en",
+    "keywords": ["portrait", "painting", "sultan", "image", "ritratto", "sultani"],
+    "exclude_keywords": ["arms", "coa", "map", "flag", "family", "pedigree", "svg"],
     "monarcas": [
-      ["Osman I", 1299, 1324, "Siglo XIV"],
       ["Orhan I", 1324, 1362, "Siglo XIV"],
+      ["Murad I", 1362, 1389, "Siglo XIV"],
+      ["Bayezid I", 1389, 1402, "Siglo XIV"],
+      ["Mehmed I", 1413, 1421, "Siglo XV"],
+      ["Murad II", 1421, 1451, "Siglo XV"],
       ["Mehmed II", 1451, 1481, "Siglo XV"],
-      ["Solimán el Magnífico", 1520, 1566, "Siglo XVI"],
+      ["Bayezid II", 1481, 1512, "Siglo XV"],
+      ["Selim I", 1512, 1520, "Siglo XVI"],
+      ["Soliman I", 1520, 1566, "Siglo XVI"],
+      ["Selim II", 1566, 1574, "Siglo XVI"],
+      ["Murad III", 1574, 1595, "Siglo XVI"],
+      ["Mehmed III", 1595, 1603, "Siglo XVI"],
       ["Ahmed I", 1603, 1617, "Siglo XVII"],
+      ["Mustafa I", 1617, 1623, "Siglo XVII"],
+      ["Osman II", 1618, 1622, "Siglo XVII"],
+      ["Murad IV", 1623, 1640, "Siglo XVII"],
+      ["Ibrahim", 1640, 1648, "Siglo XVII"],
+      ["Mehmed IV", 1648, 1687, "Siglo XVII"],
+      ["Soliman II", 1687, 1691, "Siglo XVII"],
+      ["Ahmed II", 1691, 1695, "Siglo XVII"],
+      ["Mustafa II", 1695, 1703, "Siglo XVIII"],
+      ["Ahmed III", 1703, 1730, "Siglo XVIII"],
+      ["Mahmud I", 1730, 1754, "Siglo XVIII"],
+      ["Osman III", 1754, 1757, "Siglo XVIII"],
+      ["Mustafa III", 1757, 1774, "Siglo XVIII"],
+      ["Abdul Hamid I", 1774, 1789, "Siglo XVIII"],
+      ["Selim III", 1789, 1807, "Siglo XVIII"],
+      ["Mustafa IV", 1807, 1808, "Siglo XIX"],
       ["Mahmud II", 1808, 1839, "Siglo XIX"]
     ]
   },
   "Rusa": {
     "lang": "es",
+    "fallback_lang": "en",
+    "keywords": ["portrait", "painting", "zar", "czar", "emperor", "empress", "zarina", "emperatriz", "gran duque", "retrato"],
+    "exclude_keywords": ["arms", "coa", "map", "flag", "svg", "palace", "mapa", "familia"],
     "monarcas": [
-      ["Iván IV de Rusia", 1547, 1584, "Siglo XVI"],
+      ["Dmitri Donskoi", 1359, 1389, "Siglo XIV"],
+      ["Basilio I de Moscow", 1389, 1425, "Siglo XV"],
+      ["Basilio II de Moscow", 1425, 1462, "Siglo XV"],
+      ["Ivan III de Rusia", 1462, 1505, "Siglo XV"],
+      ["Basilio III de Russia", 1505, 1533, "Siglo XVI"],
+      ["Ivan IV de Rusia", 1547, 1584, "Siglo XVI"],
+      ["Fiodor I de Rusia", 1584, 1598, "Siglo XVI"],
       ["Miguel I de Rusia", 1613, 1645, "Siglo XVII"],
+      ["Alejo I de Rusia", 1645, 1676, "Siglo XVII"],
       ["Pedro I de Rusia", 1682, 1725, "Siglo XVII"],
+      ["Catalina I de Rusia", 1725, 1727, "Siglo XVIII"],
+      ["Isabel I de Rusia", 1741, 1762, "Siglo XVIII"],
       ["Catalina II de Rusia", 1762, 1796, "Siglo XVIII"],
       ["Alejandro I de Rusia", 1801, 1825, "Siglo XIX"]
+    ]
+  },
+  "Española": {
+    "lang": "es",
+    "fallback_lang": "en",
+    "keywords": ["portrait", "painting", "king", "queen", "rey", "reina", "retrato", "monarch"],
+    "exclude_keywords": ["arms", "coa", "map", "flag", "svg", "castle", "mapa", "familia", "palace"],
+    "monarcas": [
+      ["Enrique II de Castilla", 1369, 1379, "Siglo XIV"],
+      ["Juan I de Castilla", 1379, 1390, "Siglo XIV"],
+      ["Enrique III de Castilla", 1390, 1406, "Siglo XV"],
+      ["Juan II de Castilla", 1406, 1454, "Siglo XV"],
+      ["Isabel I de Castilla", 1474, 1504, "Siglo XV"],
+      ["Carlos I de España", 1516, 1556, "Siglo XVI"],
+      ["Felipe II de España", 1556, 1598, "Siglo XVI"],
+      ["Felipe IV de España", 1621, 1665, "Siglo XVII"],
+      ["Felipe V de España", 1700, 1746, "Siglo XVIII"],
+      ["Carlos III de España", 1759, 1788, "Siglo XVIII"],
+      ["Fernando VII de España", 1813, 1833, "Siglo XIX"]
+    ]
+  },
+  "Britanica": {
+    "lang": "es",
+    "fallback_lang": "en",
+    "keywords": ["portrait", "painting", "king", "queen", "rey", "reina", "retrato", "monarch"],
+    "exclude_keywords": ["arms", "coa", "map", "flag", "svg", "castle", "mapa", "familia"],
+    "monarcas": [
+      ["Eduardo III de Inglaterra", 1327, 1377, "Siglo XIV"],
+      ["Ricardo II de Inglaterra", 1377, 1399, "Siglo XIV"],
+      ["Enrique V de Inglaterra", 1413, 1422, "Siglo XV"],
+      ["Enrique VII de Inglaterra", 1485, 1509, "Siglo XV"],
+      ["Enrique VIII de Inglaterra", 1509, 1547, "Siglo XVI"],
+      ["Isabel I de Inglaterra", 1558, 1603, "Siglo XVI"],
+      ["Jacobo I de Inglaterra", 1603, 1625, "Siglo XVII"],
+      ["Carlos I de Inglaterra", 1625, 1649, "Siglo XVII"],
+      ["Carlos II de Inglaterra", 1660, 1685, "Siglo XVII"],
+      ["Ana de Gran Bretana", 1702, 1714, "Siglo XVIII"],
+      ["Jorge III del Reino Unido", 1760, 1820, "Siglo XVIII"],
+      ["Jorge IV del Reino Unido", 1820, 1830, "Siglo XIX"]
+    ]
+  },
+  "Mogol": {
+    "lang": "en",
+    "fallback_lang": "es",
+    "keywords": ["portrait", "painting", "king", "emperor", "shah", "mogul"],
+    "exclude_keywords": ["arms", "coa", "map", "flag", "svg", "castle", "family", "tomb", "architecture"],
+    "monarcas": [
+      ["Babur", 1526, 1530, "Siglo XVI"],
+      ["Humayun", 1530, 1556, "Siglo XVI"],
+      ["Akbar", 1556, 1605, "Siglo XVI"],
+      ["Jahangir", 1605, 1627, "Siglo XVII"],
+      ["Shah Jahan", 1628, 1658, "Siglo XVII"],
+      ["Aurangzeb", 1658, 1707, "Siglo XVII"],
+      ["Bahadur Shah I", 1707, 1712, "Siglo XVIII"],
+      ["Shah Alam II", 1759, 1806, "Siglo XVIII"],
+      ["Bahadur Shah II", 1837, 1857, "Siglo XIX"]
+    ]
+  },
+  "Ming": {
+    "lang": "en",
+    "fallback_lang": "es",
+    "keywords": ["portrait", "painting", "emperor", "imperial"],
+    "exclude_keywords": ["arms", "coa", "map", "flag", "svg", "palace", "tomb"],
+    "monarcas": [
+      ["Emperor Hongwu", 1368, 1398, "Siglo XIV"],
+      ["Emperor Yongle", 1402, 1424, "Siglo XV"],
+      ["Emperor Xuande", 1425, 1435, "Siglo XV"],
+      ["Emperor Chenghua", 1464, 1487, "Siglo XV"],
+      ["Emperor Hongzhi", 1487, 1505, "Siglo XV"],
+      ["Emperor Jiajing", 1521, 1567, "Siglo XVI"],
+      ["Emperor Wanli", 1572, 1620, "Siglo XVI"],
+      ["Emperor Chongzhen", 1627, 1644, "Siglo XVII"]
+    ]
+  },
+  "Qing": {
+    "lang": "en",
+    "fallback_lang": "es",
+    "keywords": ["portrait", "painting", "emperor", "imperial"],
+    "exclude_keywords": ["arms", "coa", "map", "flag", "svg", "palace", "tomb"],
+    "monarcas": [
+      ["Emperor Shunzhi", 1644, 1661, "Siglo XVII"],
+      ["Emperor Kangxi", 1661, 1722, "Siglo XVII"],
+      ["Emperor Yongzheng", 1723, 1735, "Siglo XVIII"],
+      ["Emperor Qianlong", 1735, 1796, "Siglo XVIII"],
+      ["Emperor Jiaqing", 1796, 1820, "Siglo XVIII"],
+      ["Emperor Daoguang", 1820, 1850, "Siglo XIX"]
+    ]
+  },
+  "Japonesa": {
+    "lang": "en",
+    "fallback_lang": "es",
+    "keywords": ["portrait", "painting", "shogun", "emperor"],
+    "exclude_keywords": ["arms", "coa", "map", "flag", "svg", "castle", "family", "tomb"],
+    "monarcas": [
+      ["Tokugawa Ieyasu", 1603, 1605, "Siglo XVII"],
+      ["Tokugawa Hidetada", 1605, 1623, "Siglo XVII"],
+      ["Tokugawa Iemitsu", 1623, 1651, "Siglo XVII"],
+      ["Tokugawa Tsunayoshi", 1680, 1709, "Siglo XVII"],
+      ["Tokugawa Yoshimune", 1716, 1745, "Siglo XVIII"],
+      ["Tokugawa Ieharu", 1760, 1786, "Siglo XVIII"],
+      ["Emperor Kokaku", 1780, 1817, "Siglo XVIII"],
+      ["Emperor Ninko", 1817, 1846, "Siglo XIX"]
+    ]
+  },
+  "Danesa": {
+    "lang": "es",
+    "fallback_lang": "en",
+    "keywords": ["portrait", "painting", "king", "queen", "rey", "reina", "retrato", "konig", "konge"],
+    "exclude_keywords": ["arms", "coa", "map", "flag", "svg", "castle", "mapa", "familia"],
+    "monarcas": [
+      ["Cristian I de Dinamarca", 1448, 1481, "Siglo XV"],
+      ["Juan de Dinamarca", 1481, 1513, "Siglo XV"],
+      ["Cristian II de Dinamarca", 1513, 1523, "Siglo XVI"],
+      ["Cristian III de Dinamarca", 1534, 1559, "Siglo XVI"],
+      ["Federico II de Dinamarca", 1559, 1588, "Siglo XVI"],
+      ["Cristian IV de Dinamarca", 1588, 1648, "Siglo XVII"],
+      ["Federico III de Dinamarca", 1648, 1670, "Siglo XVII"],
+      ["Cristian V de Dinamarca", 1670, 1699, "Siglo XVII"],
+      ["Federico IV de Dinamarca", 1699, 1730, "Siglo XVIII"],
+      ["Cristian VI de Dinamarca", 1730, 1746, "Siglo XVIII"],
+      ["Federico V de Dinamarca", 1746, 1766, "Siglo XVIII"],
+      ["Cristian VII de Dinamarca", 1766, 1808, "Siglo XVIII"],
+      ["Federico VI de Dinamarca", 1808, 1839, "Siglo XIX"]
+    ]
+  },
+  "Etiopia": {
+    "lang": "en",
+    "fallback_lang": "es",
+    "keywords": ["portrait", "painting", "king", "emperor", "negus", "retrato"],
+    "exclude_keywords": ["arms", "coa", "map", "flag", "svg", "castle", "family", "tomb"],
+    "monarcas": [
+      ["Dawit I", 1382, 1413, "Siglo XIV"],
+      ["Yeshaq I", 1414, 1429, "Siglo XV"],
+      ["Zara Yaqob", 1434, 1468, "Siglo XV"],
+      ["Lebna Dengel", 1508, 1540, "Siglo XVI"],
+      ["Gelawdewos", 1540, 1559, "Siglo XVI"],
+      ["Iyoas II", 1818, 1821, "Siglo XIX"]
     ]
   }
 }
