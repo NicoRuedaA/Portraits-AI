@@ -1,7 +1,27 @@
 # Portraits-AI: Roadmap de Refactorización
 
 > Última actualización: Abril 2026
-> Estado actual: Pipeline funcional pero con deuda técnica crítica
+> **Estado: ✅ COMPLETADO** — Todas las 6 fases implementadas
+
+---
+
+## 📊 Estado Final
+
+| Fase | Estado | Commits |
+|------|--------|---------|
+| **0** — Estabilizar | ✅ | `.gitignore`, ROADMAP.md, numpy.whl eliminado |
+| **1** — Eliminar Duplicación | ✅ | 11 dinastías en JSON, scraper_core.py único |
+| **2** — Robustecer Motor | ✅ | Retry/backoff, logging estructurado, stats |
+| **3** — Tests y Calidad | ✅ | **89 tests**, ruff clean |
+| **4** — Mejoras Pipeline | ✅ | Filtros calidad, metadata JSON, 4 cascadas Haar |
+| **5** — Extensibilidad | ✅ | Provider architecture (Wikipedia + Wikimedia) |
+| **6** — Dataset/Modelado | ✅ | Splits train/val/test, dataset.yaml |
+
+**Estadísticas finales:**
+- 89 tests pasando
+- ruff: 0 errores
+- 6 módulos Python
+- 11 dinastías configurables
 
 ---
 
@@ -337,17 +357,17 @@ Para entrenamiento LoRA:
 
 ---
 
-## Timeline Estimado
+## Timeline Real
 
-| Fase | Duración | Dificultad | Impacto |
-|------|----------|------------|----------|
-| **Fase 0** — Estabilizar | 1-2 horas | ⭐ | 🔴 Crítico |
-| **Fase 1** — Eliminar Duplicación | 3-4 horas | ⭐⭐ | 🔴 Crítico |
-| **Fase 2** — Robustecer Motor | 3-4 horas | ⭐⭐ | 🟡 Alto |
-| **Fase 3** — Tests y Calidad | 4-5 horas | ⭐⭐ | 🟡 Alto |
-| **Fase 4** — Mejoras Pipeline | 3-4 horas | ⭐⭐⭐ | 🟢 Medio |
-| **Fase 5** — Extensibilidad | 5-6 horas | ⭐⭐⭐ | 🟢 Futuro |
-| **Fase 6** — Dataset/Modelado | 4-5 horas | ⭐⭐ | 🟢 Futuro |
+| Fase | Estado | Duración Real | Dificultad | Impacto |
+|------|--------|---------------|-------------|----------|
+| **Fase 0** — Estabilizar | ✅ | ~30 min | ⭐ | 🔴 Crítico |
+| **Fase 1** — Eliminar Duplicación | ✅ | ~1 hora | ⭐⭐ | 🔴 Crítico |
+| **Fase 2** — Robustecer Motor | ✅ | ~45 min | ⭐⭐ | 🟡 Alto |
+| **Fase 3** — Tests y Calidad | ✅ | ~1 hora | ⭐⭐ | 🟡 Alto |
+| **Fase 4** — Mejoras Pipeline | ✅ | ~45 min | ⭐⭐ | 🟢 Medio |
+| **Fase 5** — Extensibilidad | ✅ | ~45 min | ⭐⭐⭐ | 🟢 Medio |
+| **Fase 6** — Dataset/Modelado | ✅ | ~30 min | ⭐⭐ | 🟢 Medio |
 
 ---
 
