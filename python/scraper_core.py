@@ -67,7 +67,7 @@ def setup_logging(verbose: bool = False, log_file: Path = None):
         log_file = LOG_DIR / f"portraits_{timestamp}.log"
 
     # Configurar logger raíz
-    level = logging.DEBUG if verbose else logging.INFO
+    _log_level = logging.DEBUG if verbose else logging.INFO  # noqa: F841
 
     # File handler (todo)
     file_handler = logging.FileHandler(log_file, encoding="utf-8")
@@ -440,7 +440,7 @@ def main():
     # === MODO CONTEO ===
     if args.count:
         count_stats = count_portraits()
-        print(f"\n=== ESTADO DEL DATASET ===")
+        print("\n=== ESTADO DEL DATASET ===")
         print(f"Total: {count_stats['total_images']}")
         print("\nPor dinastía:")
         for dyn, count in sorted(count_stats["by_dynasty"].items()):

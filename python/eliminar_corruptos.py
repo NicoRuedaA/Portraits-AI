@@ -113,7 +113,7 @@ def filtrar_imagenes_sin_rostro(directorio_raiz):
                         total_descartado += 1
                         
     print("\n-------------------------------------------")
-    print(f"✅ Filtrado completado.")
+    print("✅ Filtrado completado.")
     print(f"Imágenes revisadas: {total_revisado}")
     print(f"Imágenes movidas a '00_DESCARTADOS': {total_descartado}")
     print("-------------------------------------------")

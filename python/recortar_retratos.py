@@ -1,6 +1,5 @@
 import os
 import cv2
-import numpy as np
 from PIL import Image
 
 # --- CONFIGURACIÓN ---
@@ -143,7 +142,7 @@ def procesar_recorte_inteligente():
                     total_fallido += 1
 
     print("\n-------------------------------------------")
-    print(f"✅ Recorte masivo completado.")
+    print("✅ Recorte masivo completado.")
     print(f"Total procesado: {total_procesado}. Fallidos: {total_fallido}")
     print(f"Archivos guardados en la carpeta: {os.path.basename(CARPETA_SALIDA)}")
     print("-------------------------------------------")

@@ -53,7 +53,7 @@ def main():
         from scraper_core import count_portraits
 
         stats = count_portraits()
-        print(f"\n=== ESTADO ===")
+        print("\n=== ESTADO ===")
         print(f"Total: {stats['total_images']}")
         if stats["by_dynasty"]:
             print("\nPor dinastía:")
@@ -103,7 +103,7 @@ def main():
                 process_dynasty(dyn_name, dyn_config, stats)
                 stats["dynasties_processed"] += 1
 
-        print(f"\n=== DESCARGAS ===")
+        print("\n=== DESCARGAS ===")
         print(f"Dinastías: {stats['dynasties_processed']}")
         print(f"Con imágenes: {stats['monarchs_with_images']}")
         print(f"Sin imágenes: {stats['monarchs_empty']}")
