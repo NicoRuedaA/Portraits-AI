@@ -3,12 +3,19 @@
 scraper_core.py — Motor de scraping unificado para Portraits-AI.
 
 Lee la configuración de monarcas.json y descarga retratos desde Wikipedia,
-con fallback de idioma, retry con backoff y logging estructurado.
+con fallback de idioma, retry con backoff, logging estructurado y soporte de providers.
+
+Providers disponibles:
+- wikipedia: Scraping desde páginas de Wikipedia (default, backwards compatible)
+- wikimedia: API de Wikimedia Commons (más imágenes)
+- combined: Combina ambos providers
 
 Uso:
     python scraper_core.py                    # Descarga todas las dinastías
     python scraper_core.py --dynasty Francesa # Solo una dinastía específica
     python scraper_core.py --count            # Solo contar sin descargar
+    python scraper_core.py --provider wikimedia  # Usar Wikimedia Commons
+    python scraper_core.py --provider combined # Combinar proveedores
     python scraper_core.py --verbose          # Log detallado a archivo
 """
 
@@ -16,7 +23,6 @@ import argparse
 import json
 import logging
 import os
-import sys
 import time
 from datetime import datetime
 from pathlib import Path
@@ -35,6 +41,20 @@ HEADERS = {
 
 # Límite de imágenes por monarca
 MAX_IMAGES_PER_MONARCH = 5
+
+# Intentar importar providers (opcional)
+try:
+    from providers import (
+        PortraitProvider,
+        WikipediaProvider,
+        WikimediaCommonsProvider,
+        CombinedProvider,
+        create_provider as create_img_provider,
+    )
+
+    PROVIDERS_AVAILABLE = True
+except ImportError:
+    PROVIDERS_AVAILABLE = False
 
 # Configuración de retry
 MAX_RETRIES = 3

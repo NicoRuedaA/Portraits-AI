@@ -65,6 +65,9 @@ class TestMonarcasSchema:
     def test_all_dynasties_have_required_fields(self, config_data):
         """Cada dinastía debe tener lang y monarcas."""
         for dynasty_name, dynasty_data in config_data.items():
+            # Skip metadata section
+            if dynasty_name.startswith("_"):
+                continue
             missing = REQUIRED_DYNASTY_FIELDS - set(dynasty_data.keys())
             assert not missing, f"{dynasty_name} missing fields: {missing}"
 
@@ -72,6 +75,8 @@ class TestMonarcasSchema:
         """El campo lang debe ser un código de idioma válido."""
         valid_langs = {"es", "en", "fr", "de", "it", "pt", "zh", "ja", "ar", "ru"}
         for dynasty_name, dynasty_data in config_data.items():
+            if dynasty_name.startswith("_"):
+                continue
             lang = dynasty_data.get("lang", "")
             assert lang in valid_langs, (
                 f"{dynasty_name}: lang '{lang}' is not a valid language code"
@@ -227,17 +232,32 @@ class TestCrossDynastyConsistency:
     def test_all_dynasties_have_monarchs(self, config_data):
         """Ninguna dinastía debe tener lista de monarcas vacía."""
         for dynasty_name, dynasty_data in config_data.items():
+            # Skip metadata section
+            if dynasty_name.startswith("_"):
+                continue
             monarcas = dynasty_data.get("monarcas", [])
             assert len(monarcas) > 0, f"{dynasty_name}: has no monarchs defined"
 
     def test_total_monarch_count(self, config_data):
         """Debe haber un número razonable de monarcas totales."""
-        total = sum(len(d.get("monarcas", [])) for d in config_data.values())
+        total = sum(
+            len(d.get("monarcas", []))
+            for d in config_data.values()
+            if not d.get("monarcas", [])
+        )
+        total = sum(
+            len(d.get("monarcas", []))
+            for d in config_data.values()
+            if isinstance(d, dict) and "monarcas" in d
+        )
         assert total >= 20, f"Expected at least 20 monarchs, got {total}"
 
     def test_all_dynasties_have_keywords(self, config_data):
         """Todas las dinastías deben tener keywords definidas."""
         for dynasty_name, dynasty_data in config_data.items():
+            # Skip metadata section
+            if dynasty_name.startswith("_"):
+                continue
             assert "keywords" in dynasty_data, f"{dynasty_name}: missing keywords"
             assert "exclude_keywords" in dynasty_data, (
                 f"{dynasty_name}: missing exclude_keywords"

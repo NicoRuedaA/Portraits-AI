@@ -1,7 +1,12 @@
 {
+  "_metadata": {
+    "version": "1.1",
+    "providers": ["wikipedia", "wikimedia", "combined"]
+  },
   "Francesa": {
     "lang": "es",
     "fallback_lang": "en",
+    "source": "wikipedia",
     "keywords": ["portrait", "painting", "king", "queen", "rey", "reina", "retrato", "roi", "monarque"],
     "exclude_keywords": ["arms", "coa", "map", "flag", "svg", "castle", "mapa", "familia", "chateau"],
     "monarcas": [
